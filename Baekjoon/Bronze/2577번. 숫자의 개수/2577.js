@@ -1,4 +1,8 @@
-const input = require("fs").readFileSync("./input.txt").toString().split("\n");
+const input = require("fs")
+  .readFileSync("input.txt")
+  .toString()
+  .trim()
+  .split("\n");
 
 let multiplyNum = 1;
 
