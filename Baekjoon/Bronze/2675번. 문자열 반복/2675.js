@@ -4,12 +4,14 @@ const input = require("fs")
   .trim()
   .split("\n");
 
+const testCount = parseInt(input[0]);
 let result = "";
 
-for (i = 1; i < input.length; i++) {
-  let divide = input[i].split(" ");
-  for (const char of divide[1]) {
-    result += char.repeat(parseInt(divide[0]));
+for (i = 1; i <= testCount; i++) {
+  let count = parseInt(input[i].split(" ")[0]);
+  let char = input[i].split(" ")[1];
+  for (const el of char) {
+    result += el.repeat(count);
   }
   console.log(result);
   result = "";
