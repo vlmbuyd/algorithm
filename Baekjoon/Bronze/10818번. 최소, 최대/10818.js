@@ -8,8 +8,8 @@ const count = parseInt(input.shift());
 
 const arr = input[0].split(" ").map((item) => parseInt(item));
 
-let max = 0;
-let min = 99999999;
+let max = -99999999999;
+let min = 999999999;
 
 for (i = 0; i < count; i++) {
   if (arr[i] >= max) {
