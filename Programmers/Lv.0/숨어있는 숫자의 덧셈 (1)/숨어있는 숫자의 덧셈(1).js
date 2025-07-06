@@ -18,3 +18,11 @@ function solution(my_string) {
     .reduce((sum, curr) => sum + parseInt(curr), 0);
   return answer;
 }
+
+// 풀이3 (복습 시 풀이)
+function solution(my_string) {
+  return [...my_string].reduce(
+    (acc, curr) => (Number(curr) ? acc + Number(curr) : acc),
+    0
+  );
+}
