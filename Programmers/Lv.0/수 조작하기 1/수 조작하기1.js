@@ -30,3 +30,13 @@ function solution(n, control) {
   );
   return answer;
 }
+
+// 풀이 3
+function solution(n, control) {
+  return [...control].reduce((acc, curr) => {
+    if (curr === "w") return acc + 1;
+    else if (curr === "s") return acc - 1;
+    else if (curr === "d") return acc + 10;
+    else if (curr === "a") return acc - 10;
+  }, n);
+}
