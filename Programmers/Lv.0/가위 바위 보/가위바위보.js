@@ -27,3 +27,18 @@ function solution(rsp) {
     .join("");
   return answer;
 }
+
+// 풀이 3ㄴ
+const RSP = {
+  2: 0,
+  0: 5,
+  5: 2,
+};
+
+function solution(rsp) {
+  const answer = [];
+
+  [...rsp].map((v) => answer.push(RSP[v]));
+
+  return answer.join("");
+}
